@@ -1,1 +1,0 @@
-john@john-ThinkPad-X60s.2018:1364616779
