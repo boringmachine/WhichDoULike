@@ -1,0 +1,9 @@
+thead {
+	background: #CCDAFF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-weight: normal;
+	padding: 10px;
+	margin: 10px;
+}
