@@ -15,11 +15,11 @@ class FilePathSelector {
 		$handle = opendir($this -> dir_name) or die('Couldn\'t open.');
 		while ($fname = readdir($handle)) {
 			if (is_file($this -> dir_name . $fname)) {
-				array_push($this->file_array, $fname);
+				array_push($this -> file_array, $fname);
 			}
 		}
 		closedir($handle);
-		$this -> size = count($this->file_array);
+		$this -> size = count($this -> file_array);
 	}
 
 	function selectKeyOfFilePath() {
