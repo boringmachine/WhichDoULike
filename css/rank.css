@@ -1,12 +1,11 @@
-
-th,td {
-    float:left;
-    background: #FFDACC;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    font-weight: normal;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 6px 6px 6px #888888;
+th, td {
+	float: left;
+	background: #FFDACC;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-weight: normal;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 6px 6px 6px #888888;
 }
