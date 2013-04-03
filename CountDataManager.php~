@@ -1,0 +1,23 @@
+<?php
+class CountDataManager{
+    var $filename;
+
+    function readCountDataByJSON($key){
+	$handle = fopen($this->filename, 'r');
+	$data = json_decode(fread($handle, filesize($this->filename)), TRUE);
+	if (array_key_exists($key, $data)) {
+	    $data[$key]++;
+	} else {
+	    $data[$key] = 1;
+	}
+	fclose($handle);
+	return $data;
+    }
+
+    function writeAsJSON(){
+	$handle = fopen($this->filename, 'w');             
+	fwrite($handle, json_encode($data));
+	fclose($handle);
+    }
+}
+?>
