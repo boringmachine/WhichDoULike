@@ -6,8 +6,8 @@ $manager = new CountDataManager();
 $selector = new FilePathSelector();
 
 if(array_key_exists("name",$_GET)){
-    $manager->filename = 'data.json';
     $key = $_GET["name"];
+	$manager->setFileName('data.json');
     $manager->readCountDataByJSON($key);
     $manager->writeDataAsJSON();
 }
