@@ -22,6 +22,9 @@ $(function() {
 				var $tbody = $("tbody").append($tr);
 			}
 			i++;
+			if(end_index==(keys.length-1)){
+				$("#loadButton").hide();
+			}
 		});
 		$("#loadButton").click(function() {
 			start_index = end_index + 1;
@@ -32,7 +35,7 @@ $(function() {
 
 	var url = "data.json";
 	$.getJSON(url, function(data) {
-		var keys = ArrayLikeObjectSorter(data);
+		var keys = $.sortKeysByValues(data);
 		appendToTbody(data, keys, start_index, end_index);
 	});
 });
