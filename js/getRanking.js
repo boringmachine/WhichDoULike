@@ -22,7 +22,7 @@ $(function() {
 				var $tbody = $("tbody").append($tr);
 			}
 			i++;
-			if(end_index==(keys.length-1)){
+			if(end_index >= keys.length){
 				$("#loadButton").hide();
 			}
 		});

@@ -30,7 +30,7 @@
 		$.each(data, function(key, value) {
 			values[i] = value;
 			i++;
-		})
+		});
 		return values;
 	}
 
